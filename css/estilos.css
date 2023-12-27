@@ -1174,7 +1174,7 @@ button:hover {
     }
 
     .hero__title {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
     .hero::before {
@@ -1203,7 +1203,7 @@ button:hover {
 
 
     .hero__paragraph {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .subtitle {
