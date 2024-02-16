@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/owl.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 
     <meta name="theme-color" content="#2091F9">
 
@@ -35,7 +36,7 @@
                     <a href="#" class="nav__links">Inicio</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#soluciones" class="nav__links">Requisitos</a>
+                    <a href="#soluciones" class="nav__links">Asesoramiento</a>
                 </li>
 
                 <!-- <li class="nav__items">
@@ -97,7 +98,7 @@
             <div class="about__main">
                 <article data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="0"
                     data-aos-delay="0" class="about__icons">
-                    <img src="./images/asesoramiento-online.png" class="about__icon">
+                    <img src="./images//iconos/ASESORAMIENTO IMPOSITIVO.png" class="about__icon">
                     <h3 class="about__title">ASESORAMIENTO IMPOSITIVO</h3>
                     <p class="about__paragrah">Te liquidamos tus impuestos. Te asesoramos respecto a tus activos
                         digitales. *Tax planing* con el objetivo de optimizar tu costo fiscal y evitar contingencias.
@@ -106,7 +107,7 @@
 
                 <article data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="0"
                     data-aos-delay="100" class="about__icons">
-                    <img src="./images/clasificacion.png" class="about__icon">
+                    <img src="./images/iconos/ASESORAMIENTO FINANCIERO.png" class="about__icon">
                     <h3 class="about__title">ASESORAMIENTO FINANCIERO </h3>
                     <p class="about__paragrah">Te asesoramos respecto a las cobranzas desde el exterior de tus
                         servicios. Te recomendamos respecto a tus inversiones y decisiones estratégicas. Te mantendremos
@@ -115,7 +116,7 @@
 
                 <article data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="0"
                     data-aos-delay="200" class="about__icons">
-                    <img src="./images/apreton-de-manos (1).png" style="width: 90px;" class="about__icon">
+                    <img src="./images/iconos/GESTIÓN ADMINISTRATIVA.png" style="width: 90px;" class="about__icon">
                     <h3 class="about__title">GESTIÓN ADMINISTRATIVA</h3>
                     <p class="about__paragrah">Facturamos tus servicios a clientes del exterior. Realizamos tus
                         certificaciones de ingresos para presentar ante distintos organismos. Brindamos recomendaciones
@@ -124,7 +125,19 @@
                 </article>
             </div>
         </section>
-
+        <script>
+            const articles = document.querySelectorAll('.about__icons');
+        
+            articles.forEach(article => {
+                article.addEventListener('mouseenter', () => {
+                    article.style.transform = 'translateY(-10px)';
+                });
+        
+                article.addEventListener('mouseleave', () => {
+                    article.style.transform = 'translateY(0)';
+                });
+            });
+        </script>
         <section class="testimony">
             <div class="testimony__container container">
                 <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
@@ -192,14 +205,14 @@
 
                 <article data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
                     data-aos-delay="0" class="about2__icons">
-                    <img src="./images/experiencia (1).png" class="about__icon">
+                    <img src="./images/iconos/EXPERIENCIA.png" class="about__icon">
                     <h3 class="about2__title">EXPERIENCIA</h3>
                     <p class="about2__paragrah">También somos emprendedores, y entendemos tu necesidad. Vas a ganar
                         tiempo y tranquilidad.</p>
                 </article>
                 <article data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
-                    data-aos-delay="0" class="about2__icons">
-                    <img src="./images/hora.png" class="about__icon">
+                    data-aos-delay="250" class="about2__icons">
+                    <img src="./images/iconos/EFICIENCIA.png" class="about__icon">
                     <h3 class="about2__title">EFICIENCIA</h3>
                     <p class="about2__paragrah">Somos pioneros en Argentina trabajando <strong>100% Online.</strong>
                         Asesoramiento humano en tiempo real y documentación en la nube. Tu información, siempre
@@ -208,7 +221,7 @@
 
                 <article data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
                     data-aos-delay="500" class="about2__icons">
-                    <img src="./images/confidencial.png" class="about__icon">
+                    <img src="./images/iconos/CONFIDENCIALIDAD.png" class="about__icon">
                     <h3 class="about2__title">CONFIDENCIALIDAD</h3>
                     <p class="about__paragrah"> Tu información es resguardada. Nuestro contrato de confidencialidad
                         asegura que todo lo que compartas con nuestros asesores se mantendrá siempre privado.</p>
