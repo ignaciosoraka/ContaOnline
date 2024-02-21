@@ -34,6 +34,11 @@ body {
     background-color: var(--color-terciario);
 }
 
+
+
+
+
+
 h2 {
     font-size: var(--h2-font-size);
 }
@@ -46,7 +51,7 @@ h3 {
     width: 90%;
     max-width: 1500px;
     margin: 0 auto;
-    overflow: hidden;
+    
     padding: var(--padding-container);
 }
 
@@ -145,11 +150,14 @@ h3 {
     height: 100%;
     display: flex;
     align-items: center;
+   
 }
 
 .logo {
-    height: 7rem;
-    padding-top: 0.5rem;
+    height: 10rem;
+    padding-top: 2rem;
+    position: relative; /* O absolute dependiendo de la estructura */
+    z-index: 3; /* Inténtalo con un valor mayor que 2 */
 }
 
 
@@ -201,7 +209,7 @@ h3 {
     grid-auto-rows: max-content;
     align-content: center;
     gap: 1em;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
@@ -459,39 +467,140 @@ margin: 0 250px;
 
 
 
-.knowledge {
-    background: linear-gradient(-45deg, #2fa0cb,#143457, #2fa0cb);
-    background-size: 400% 400%;
-    animation: gradient-e60a44dc 15s ease-in-out infinite;
+/*seccion con texto*/
 
-    background-position: 0 0, 10px 10px;
-    overflow: hidden;
-    margin-top: 100px;
-}
-
-.knowledge__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-    align-items: center;
-}
-
-.knowledge__picture {
-    max-width: 500px;
-}
-
-.knowledge__paragraph {
-    line-height: 1.7;
-    margin-bottom: 15px;
-}
-
-.knowledge__img {
+.contenedor {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
-    display: block;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    height: 450px;
+    background-image: linear-gradient(180deg,
+            rgba(7, 7, 7, 0.59) 0%,
+            /* Color azul más oscuro */
+            rgb(17, 17, 17) 100%
+            /* Color azul transparente */
+        ), url('../images/opcion5.jpg');
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
+    background-position: center center;
+    /* Centra la imagen horizontal y verticalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+
+
 }
 
+/*  .texto{
+    font-size: 24px;
+    max-width: 800px;
+    
+}
+
+.texto-izquierdo {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    color: #fff;
+    font-size: 18px;
+}
+.mi-texto {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+   
+    transform: translate(0, -50%);
+    color: #fff;
+    font-size: 40px;
+    
+   
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+    transition: transform 0.3s ease-in-out;
+   
+}
+
+@media (max-width:765px){
+    .mi-texto {
+        left: 12%; /* Cambiar el valor para centrar horizontalmente 
+        position: absolute;
+        top: 45%;
+        text-align: center;
+        padding-right: 45px;
+        transform: translate(0, -50%);
+        color: #fff;
+        font-size: 25px;
+        
+       
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        
+        transition: transform 0.3s ease-in-out;
+        
+
+
+    }
+    .texto{
+        font-size: 14px;
+    }  */
+
+
+
+
+.texto{
+    font-size: 24px;
+    max-width: 1000px;
+    
+}
+
+.texto-izquierdo {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    color: #fff;
+    font-size: 18px;
+}
+
+.mi-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Cambiar el valor para centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar vertical y horizontalmente */
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    /* Grosor del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Sombra del texto */
+    transition: transform 0.3s ease-in-out;
+    /* Transición en el efecto hover */
+}
+
+@media (max-width:765px){
+    .mi-texto {
+        left: 12%; /* Cambiar el valor para centrar horizontalmente */
+        position: absolute;
+        top: 45%;
+        text-align: center;
+        padding-right: 45px;
+        transform: translate(0, -50%);
+        color: #fff;
+        font-size: 25px;
+        
+        /* Grosor del texto */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        /* Sombra del texto */
+        transition: transform 0.3s ease-in-out;
+        /* Transición en el efecto hover */
+
+
+    }
+    .texto{
+        font-size: 14px;
+    }
+}
 
 /*---------------------------------------
   FOTO SECCION           

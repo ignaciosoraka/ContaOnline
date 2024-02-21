@@ -25,6 +25,9 @@
 
 <body>
 
+    
+   
+
     <header id="inicio" class="hero">
         <nav class="nav container fixed-nav">
             <div class="nav__logo">
@@ -88,6 +91,7 @@
 
 
 
+        
 
 
 
@@ -127,12 +131,12 @@
         </section>
         <script>
             const articles = document.querySelectorAll('.about__icons');
-        
+
             articles.forEach(article => {
                 article.addEventListener('mouseenter', () => {
                     article.style.transform = 'translateY(-10px)';
                 });
-        
+
                 article.addEventListener('mouseleave', () => {
                     article.style.transform = 'translateY(0)';
                 });
@@ -341,28 +345,27 @@
 
 
 
-        <section id="acercade" class="knowledge">
-            <div class="knowledge__container container">
-                <div class="knowledge__texts">
-                    <h2 class="subtitle" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
-                        data-aos-offset="0" style="color: #eff3f6;">¿Cómo trabajamos?</h2>
-                    <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400" data-aos-offset="0"
-                        class="knowledge__paragraph" style="color: #eff3f6;">Hacemos que lo complejo parezca sencillo.
+        
+
+        <section>
+            <div class="contenedor">
+                <div class="texto-izquierdo mi-texto">
+                    <p data-aos="zoom-out" data-aos-anchor-placement="center-bottom" data-aos-duration="400"
+                        data-aos-delay="500" style="font-weight: bold; color: white; margin-bottom: 10px">¿Cómo trabajamos?</p>
+    
+                    <p class="texto" data-aos="zoom-out" data-aos-anchor-placement="center-bottom" data-aos-duration="400"
+                        data-aos-delay="700">Hacemos que lo complejo parezca sencillo.
                         Tras un breve meet, diagnosticamos tu necesidad y proponemos la solución más eficiente.
                         Contarás con un contador dedicado a tu cuenta, y un equipo siempre disponible para resolver
                         cuestiones técnicas u operativas.</p>
-                    <a data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="450" data-aos-offset="0"
-                        href="#formulario" class="cta">Contáctanos</a>
                 </div>
-
-                <figure class="knowledge__picture">
-                    <img data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="380" data-aos-offset="0"
-                        src="./images/opcion5.jpg" class="knowledge__img">
-                </figure>
+    
+    
+    
+    
+    
             </div>
         </section>
-
-
 
 
 
@@ -373,7 +376,7 @@
             <h2 class="equipo">Nuestro Equipo</h2>
             <section class="questions">
                 <h3 class="subtitle2">Somos un equipo de jóvenes contadores con una década de experiencia especializados
-                    en el asesoramiento a exportadores de servicios. 
+                    en el asesoramiento a exportadores de servicios.
                     Nos entusiasma acompañar a freelancers y empresas en sus proyectos internacionales, asegurándonos de
                     respaldar cada paso que den con nuestro conocimiento sólido y nuestra perspectiva dinámica.
                 </h3>
@@ -390,8 +393,8 @@
                         <img class="imgNosotros" src="images/emojis/Avatar-conta_emoji-mujer.png" alt="Avatar">
                     </div>
                     <div class="relative nosotrosColumn shadow">
-                        <h3 class="textCenter">Evelyn</h3>
-                        <p class="textCenter">Contadora Pública</p>
+                        <h3 class="textCenter">Evelyn </h3>
+                        <p class="textCenter">Contadora Pública<br> Matricula Nacional: 5692</p>
                     </div>
                 </div>
             </div>
@@ -405,7 +408,7 @@
                     </div>
                     <div class="relative nosotrosColumn shadow">
                         <h3 class="textCenter">Hernán</h3>
-                        <p class="textCenter">Contador Público</p>
+                        <p class="textCenter">Contador Público<br> Matricula Nacional: 5078</p>
                     </div>
                 </div>
             </div>
@@ -515,12 +518,15 @@
     <script src="./js/custom.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="js/animationwow.js"></script>
+    <script src="js/preloader.js"></script>
 
     <script src="js/script.js"></script>
 
     <script>
         AOS.init();
     </script>
+
+   
 
 </body>
 
