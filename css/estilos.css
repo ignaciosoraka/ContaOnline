@@ -187,6 +187,9 @@ h3 {
     color: #fff;
     text-decoration: none;
 }
+.nav__links:hover {
+    color: #0474bc; /* Cambia este color por el que prefieras */
+}
 
 .nav__menu {
     margin-left: auto;
@@ -495,9 +498,9 @@ h3 {
     background-image: linear-gradient(180deg,
             rgba(7, 7, 7, 0.59) 0%,
             /* Color azul más oscuro */
-            rgb(17, 17, 17) 100%
+            rgba(17, 17, 17, 0.826) 100%
             /* Color azul transparente */
-        ), url('../images/opcion5.jpg');
+        ), url('../images/opcion1.jpg');
     background-size: cover;
     /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
     background-position: center center;
